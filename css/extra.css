@@ -1,3 +1,16 @@
 .schmaler {
 	width: 50% !important;
 }
+
+.reveal .slides section .fragment.highlight-bold,
+.reveal .slides section .fragment.highlight-light {
+	opacity: 1;
+}
+	.reveal .slides section .fragment.highlight-bold.visible {
+		font-weight: bolder;
+	}
+	.reveal .slides section .fragment.highlight-light.visible {
+		color: #666;
+		font-style: normal;
+	}
+	
