@@ -17,6 +17,8 @@
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
+		<link rel="stylesheet" href="css/extra.css">
+
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -38,323 +40,299 @@
 			<div class="slides">
 
 				<section>
-					<section>
+					<p>Mitlesen:</p>
+					<h3><a href="http://geosemantik.de/bodenmonitoring/">geosemantik.de/bodenmonitoring/</a></h3>
+					<p>oder</p>
+					<h3><a href="http://almereyda.github.com/bodenmonitoring/">almereyda.github.com/bodenmonitoring/</a></h3>
+					<p><br></p>
+					<p><pre class="schmaler"><code>tasten:interessant {
+    praesentation:'s';
+    vollbild:'f';
+    ueberblick:'Esc' !important;
+    blackout:'.';
+}</code></pre></p>
+					<p><br></p>
+					<p>Stile : [<a href="?#/">original</a>] [<a href="?theme=beige#/">beige</a>]
+				</section>
+
+				<section>
+					<section data-state="blackout">
 						<p><img style="background-color:#fff;" src="http://www.fu-berlin.de/images/fu-berlin/fu_logo.gif"></p>
 						<h1>Boden :</h1>
 						<h1>monitoring</h1>
 						<h3>und</h3>
 						<h1>informations</h1>
 						<h1>systeme</h1>
-						<p>
+						<p class="fragment roll-in">
 							<small>Seminar Bodenschutz | <a href="http://www.geo.fu-berlin.de/geog/fachrichtungen/physgeog/geooekologie/mitarbeiter/schatten/index.html">René Schatten</a> & <a href="http://www.geo.fu-berlin.de/geog/fachrichtungen/physgeog/geooekologie/mitarbeiter/wagner/index.html">Robert Wagner</a> | WS 12/13</small>
-						<p>
+						<p class="fragment roll-in">
 							<small>von <a href="http://almereyda.de">Jon Richter</a> / <a href="http://twitter.com/almereyda">@almereyda</a></small>
 						</p>
+
+						<aside class="notes">
+							zwei mal nach unten, dann rechts.
+						</aside>
 					</section>
 					<section>
 						<h1>Bodenmonitoring</h1>
 						<ol>
-							<li>Kontrollverfahren</li>
-							<li>Parameter</li>
-
+							<li class="fragment shrink fade-out">Umweltmonitoring</li>
+							<li class="fragment shrink fade-out">Bezug zum Boden</li>
+							<li class="fragment shrink fade-out">Datenvielfalt</li>
+							<li class="fragment shrink fade-out">Analyse und Präsentation</li>
 						</ol>
 					</section>
 					<section>
 						<h1>Bodeninformations</h1>
 						<h1>systeme</h1>
-						<ol start="6">
-							<li>Erinnerung : GIS</li>
-							<li>Exkurs : GDI</li>
-							<li>Umwelt-IS</li>
-							<li>Beispiele</li>
+						<ol start="5">
+							<li class="fragment shrink fade-out">Erinnerung : GIS</li>
+							<li class="fragment shrink fade-out">Exkurs : GDI</li>
+							<li class="fragment shrink fade-out">Umwelt-IS</li>
+							<li class="fragment shrink fade-out">Anwendungen</li>
 						</ol>
 					</section>
 				</section>
 
 
-
-
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
+				<section data-state="blackout">
+					<h1>Bodenmonitoring</h1>
+					<img class="fragment grow" src="http://www.smapex.monash.edu.au/Data/SMAPEx-1/images/2%20monitoring%20networks.png">
+					<small>via <a href="http://www.smapex.monash.edu.au/Data/SMAPEx-1/SMAPEX-1%20Monitoring%20networks.php">SMAPEx-1 Archive</a></small>
 				</section>
-
-				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview. Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>rvl.io</h2>
-					<p>
-						If you don't like writing slides in HTML you can use the online editor <a href="http://www.rvl.io" target="_blank">rvl.io</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-							<section data-markdown>
-							  ## Markdown support
-
-							  For those of you who like that sort of thing.
-							  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-							</section>
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> -
-						<a href="?#/themes">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<section data-state="alert">
-						<h2>Global State</h2>
-						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This lets you
-							apply broader style changes, like switching the background.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#" class="image navigate-next">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
-						</a>
-					</section>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) ) {
-        node.className += ' roll';
-      }
-    };
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+						<div class="fragment grow fade-out">
+							Spezialfall des
+							<h3>Umweltmonitoring</h3>
+						</div>
+						<p>&nbsp;</p>
+						<blockquote class="fragment grow">Überwachung der Umwelt und der sie beeinträchtigenden Faktoren wie Verkehr, Landwirtschaft, Industrie u. a. mittels Fernerkundungsmethoden.</blockquote>
+						
+						<p>&nbsp;</p>
+						<blockquote class="fragment grow">dauerhafte Sicherung der ökologischen Funktion des Bodens und der Gewässer</blockquote>
+						<p class="fragment roll-in"><small>(Bill 2010 : 644, 654)</small></p>
 
 						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
+							Analyse des Einflusses auf die Umwelt
+							Auswirkungen anthropogener Aktivität
+							<ul>
+								<li>Land- und Forstwirtschaft</li>
+								<li>Bauwirtschaft</li>
+								<li>industrielle Produktion</li>
+							</ul>
+							auf
+							<ul>
+								<li>Natur (Fauna, Flora, Mensch)</li>
+								<li>Landschaft (Boden, Gewässer, Luft, ...)</li>
+							</ul>
+							dokumentieren, auswerten, gestaltend zu beeinflussen für vorsorgenden und effektiven Umweltschutz
 						</aside>
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<h3>Umweltmonitoring</h3>
+						ist
+						<p>&nbsp;</p>
+						Dokumentations- und Entscheidungsgrundlage für
+						<ul>
+							<li class="fragment grow fade-out">Unterstützung der Umweltvorsorge</li>
+							<li class="fragment grow fade-out">Sanierung von Umweltschäden</li>
+							<li class="fragment grow fade-out">Reaktion auf Umweltunfälle</li>
+						</ul>
+
+						<aside class="notes">
+							Sicherstellung von
+							<ul>
+								<li>Datenaustausch zwischen GIS und Berechnungsmodulen</li>
+								<li>Zusammenarbeit der Bausteine zwischen Datengewinnung, -aufbereitung, -modellierung und -visualisierung</li>
+								<li>Einbeziehung dynamische Messdaten : Klima, Grundwasser, Emissionen, ...</li>
+							</ul>
+							(ebd.f.)
+						</aside>
+					</section>
+					<section>
+						<img class="fragment grow" src="http://www.co2crc.com.au/images/imagelibrary/stor_diag/monitoring_media.jpg">
+						<small class="fragment roll-in">via <a href="http://www.co2crc.com.au/imagelibrary3/storage.php?screen=2">CO2CRC</a></small>
 					</section>
 				</section>
 
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
+					<section>
+						<h3 class="fragment fade-out">Bezug zum Boden</h3>
+						<p>&nbsp;</p>
+						<blockquote class="fragment grow">Der Boden ist Lebensgrundlage und Lebensraum für Menschen, Tiere und Pflanzen; er dient als Produktionsfaktor der Land- und Forstwirtschaft und ist Standort insbesondere für Siedlung, Verkehr und Erholung. Gleichzeitig ist der Boden ein Wasserspeicher. Hauptprobleme im Bodenbereich sind der Flächenverbrauch durch Siedlung und Verkehr, die Zerstörung der Bodenstruktur durch Erosion und Verdichtung sowie der Eintrag von Schadstoffen in den Boden durch Immission.</blockquote>
+						<p>&nbsp;</p>
+						<p class="fragment roll-in"><small>(Bill 2010 : 653)</small></p>
+					</section>
+					<section>
+						<h3>Klassifizieren, Beschreiben, Kartieren</h3>
+						<p>&nbsp;</p>
+						<ul>
+							<li class="fragment fade-out">physische und chemische Komposition</li>
+							<li class="fragment fade-out">Erosion</li>
+							<li class="fragment fade-out">Fruchtbarkeit</li>
+							<li class="fragment fade-out">Durchlässigkeit</li>
+						</ul>
+
+						<aside class="notes">
+						Beispiel : USA
+						NRCS (Natural Resource Conservation Service)
+						50 Bodeneigenschaften
+
+						Vegetationskarten aus Interpretationen von
+
+						Satelliten- und Luftbildern, Topographie, Infrastrukturkarten, Straßen, Abwasserleitungen, ökologisch sensible Gegenden (Nyerges 2010 : 170)
+						</aside>
+					</section>
 				</section>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
+					<section>
+						<p class="fragment fade-out">kontinuierlich (<strong>Raster</strong>)</p>
+						<p class="fragment roll-in">eigenschaftsbezogen (<em>Vektor</em>)</p>
+						<p>&nbsp;</p>
+						<h3>Datenvielfalt</h3>
+						<p>&nbsp;</p>
+						<div class="fragment grow">räumlich</div><div class="fragment shrink">zeitlich</div><span class="fragment highlight-red">semantisch</span>
+
+					</section>
+					<section>
+						<h4 class="fragment">sekundäre</h4>
+						<h3>Datenquellen</h3>
+						<p>&nbsp;</p>
+						<p>Vorhandenes Datenmaterial der Untersuchungsregion</p>
+						<p>&nbsp;</p>
+						<ul>
+							<li class="fragment">Topographie</li>
+							<li class="fragment">Hydrologie</li>
+							<li class="fragment">Vegetation</li>
+						</ul>
+
+						<aside class="notes">
+							Bodengrenzen werden oft durch andere physikalische Eigenschaften determiniert:
+							<ul>
+								<li>Vegetationswechsel</li>
+								<li>Hangänderungen</li>
+								<li>Abflussrichtungen</li>
+							</ul>
+
+							Die Analyse von vorliegendem Bildmaterial liefert anhand der Spektralverteilungen erste Anhaltspunkte zur Einteilung von (Untersuchungs-)Flächen und zur Hypothesenbildung.
+						</aside>
+					</section>
+					<section>
+						<h4>primäre</h4>
+						<h3>Datenquellen</h3>
+						<p>&nbsp;</p>
+						<ul>
+							<li class="fragment">Bohrkerne / Bodenproben</li>
+							<li class="fragment">Aufschlüsse</li>
+							<li class="fragment">Luftbildaufnahmen</li>
+							<li class="fragment">multispektrale Satellitenaufnahmen</li>
+						</ul>
+						<p>&nbsp;</p>
+						<p class="fragment roll-in"><small>(McCoy 2005 : 99)</small></p>
+
+						<aside class="notes">
+							Abhängig von den Anforderungen des Projekts
+
+							Anomalien werden durch eine gitterartige Anordnung je nach erwarteter Erscheinungsform erfasst. Isolinien lassen sich zeichnen.
+							Hyperspektrale Rasterdaten ermöglichen anschließend evtl. den gleichen Nachweis.
+
+							Verschiedene Satellitenrasterdaten stehen zur Verfügung : Infrarot/Mikrowellen, Radar
+							<ul>
+								<li>Schneebedeckung</li>
+								<li>Vegetationsbedeckung</li>
+								<li>Bodenfeuchte</li>
+							</ul>
+							(Bossler 2010)
+						</aside>
+					</section>
+				</section>
+				<section>
+					<h3>Analyse und Präsentation</h3>
+					<p>&nbsp;</p>
+					<img src="http://www.umwelt.sachsen.de/umwelt/download/boden/bg_probenahmep.jpg">
+					<small>via <a href="http://www.umwelt.sachsen.de/umwelt/boden/11633.htm">Sächsisches Landesamt für Umwelt, Landwirtschaft und Geologie</a> </small>
+
+
+
+				</section>
+
+
+				<section data-state="blackout">
+					<section>
+						<h1>Bodeninformations</h1>
+						<h1>systeme</h1>
+					</section>
+					<section>
+						<p class="fragment grow fade-out"><small>(Bill 2010 : 653)</small></p>
+						<blockquote class="fragment grow">Bodeninformationssysteme (BIS) dienen der Bereitstellung bodenkundlicher Fachbeiträge zur Raumordnung, der Bereitstellung bodenkundlicher Beratungsgrundlagen zum Grundwasserschutz im ländlichen Raum, der Erfassung und Bewertung von Altlasten und kontaminierten Standorten aus bodenkundlicher Sicht, der Erarbeitung bodenkundlicher Fachbeiträge für Umweltverträglichkeitsuntersuchungen (UVU), -studien (UVS) und -prüfungen (UVP).</blockquote>
+
+						<aside class="notes">
+							<blockquote>Solche Systeme weisen die Leistungsfähigkeit des Naturhaushalts, die ökologischen Funktionen des Walds sowie die Filter- und Pufferfunktionen des Bodens in verschiedenen fachspezifischen Datenbanken nach.</blockquote>
+							(ebd.)
+						</aside>
+					</section>
+				</section>
+				<section>
+					<h3 class="fragment">Exkurs I : GIS</h3>
+					<p class="fragment">
+					<small class="fragment fade-out">via <a href="http://www.geoecho.it/?page_id=786">Geoecho</a></small>
 					</p>
+					<img class="fragment" src="http://www.geoecho.it/wp-content/uploads/2010/11/Strati.jpg">
+
+				</section>
+				<section>
+					<h3>Exkurs II : GDI</h3>
+					<p>&nbsp;</p>
+					<img src="http://www.gdi-de.org/img/wappen.jpg">
+					<p>&nbsp;</p>
+					<p><small>via <a href="https://wiki.gdi-de.org/display/gdide/GDI-DE">GDI-DE Wiki</a></small></p>
+				</section>
+				<section>
+					<h3>Umweltinformationssysteme</h3>
+					<p>&nbsp;</p>
+					Speicherung und Verarbeitung von Umweltinformationen.
+					<p>&nbsp;</p>
+					Verschneidung und Simulation.
+				</section>
+				<section>
+					<h3>Anwendungen</h3>
+					<p>&nbsp;</p>
+					Meist Implementierung auf Landesebene.
+					Bodenerosionsmodelle
+					Erstellung eines Boden- und Gewässerschutzplans
+						Darstellung der gemessenen Belastungen im Boden und Grundwasser
+						stoffliches Gefährdungspotenzial durch Altlasten
+						Stoffeinträge durch die Landwirtschaft
+						Versiegelungsgrade im besiedelten Bereich
+						Abwassereinleitungen in Oberflächengewässer
+						Nachweis der Schutzwürdigkeit von Flächen hoher natürlicher Ertragsfähigkeit oder mit hohem Grundwasserneubildungspotenzial
+						Empfindlichkeiten des Bodens für Anreicherung bzw. Auswaschung von Schwermetallen
+						Verschmutzungsempfindlichkeit von Grundwasser und Trinkwasser
+						Schutzwürdigkeit von Flächen
+						...
+
+					<aside class="notes">
+						Bodenerosionsmodelle basieren auf feinen Probegittern (Fotheringham/Wilson)
+					</aside>
+
+				</section>
+
+				<section data-state="blackout">
+					<h3>Referenzen</h3>
+					<pre><code class="ruby">Bill, R. (2010): Grundlagen der Geo-Informationssysteme</code></pre>
+					<pre><code class="ruby">Bossler, J.D. et al. (ed.) (2010): Manual of geospatial science and technology. Boca Raton.</code></pre>
+					<pre><code class="ruby">McCoy, R.M. (2005): Field methods in remote sensing. New York.</code></pre>
+					<pre><code class="ruby">Nyerges, T.L. (2010): Regional and urban GIS. New York.</code></pre>
+
 				</section>
 
 				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://hakim.se/projects/reveal-js">Leave feedback on my site</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>It's free</h2>
-					<p>
-						reveal.js and <a href="http://www.rvl.io">rvl.io</a> are entirely free but if you'd like to support the projects you can donate below.
-						Donations will go towards hosting and domain costs.
-					</p>
-				</section>
-
-				<section>
-					<h1>Präsentation erstellt mit reveal.js von <a href="http://hakim.se/">Hakim El Hattab</a>
+					<h3>Präsentation erstellt</h3>
+					<h1>mit <a href="https://github.com/hakimel/reveal.js">reveal.js</a> von <a href="http://hakim.se/">Hakim El Hattab</a></h1>
 				</section>
 
 				<section>
